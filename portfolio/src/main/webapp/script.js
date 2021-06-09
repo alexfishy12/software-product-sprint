@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['"JESSE!" -Walter White', '"Yeah, Mr. White! Yeah, science!" -Jesse Pinkman', 'Memento mori', 'Memento vivere'];
+      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
