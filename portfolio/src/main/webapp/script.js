@@ -31,7 +31,6 @@ async function showMoreInfo() {
     const responseFromServer = await fetch('/hello');
     const jsonFromResponse = await responseFromServer.json();
 
-    console.log(jsonFromResponse);
     //gets random index to get message from json array
     index = Math.floor(Math.random() * jsonFromResponse.length);
 
