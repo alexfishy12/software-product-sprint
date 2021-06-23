@@ -27,8 +27,7 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
-async function showMoreInfo()
-{
+async function showMoreInfo() {
     const responseFromServer = await fetch('/hello');
     const jsonFromResponse = await responseFromServer.json();
 
