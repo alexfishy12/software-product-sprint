@@ -30,8 +30,12 @@ function addRandomGreeting() {
 async function showMoreInfo()
 {
     const responseFromServer = await fetch('/hello');
-    const textFromResponse = await responseFromServer.text();
+    const jsonFromResponse = await responseFromServer.json();
+
+    console.log(jsonFromResponse);
+    //gets random index to get message from json array
+    index = Math.floor(Math.random() * jsonFromResponse.length);
 
     const infoContainer = document.getElementById('moreInfo');
-    infoContainer.innerText = textFromResponse;
+    infoContainer.innerText = jsonFromResponse[index];
 }
